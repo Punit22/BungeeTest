@@ -1,0 +1,4 @@
+Question 2 :
+
+b = pd.read_csv('https://raw.githubusercontent.com/Bungeetech/internship-test2/master/input/question-2/main.csv')
+b[['occupation','age']].groupby('occupation').agg(Min=('age', 'min'), max=('age', 'max'))
